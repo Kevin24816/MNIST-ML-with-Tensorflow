@@ -30,7 +30,6 @@ def train():
     cross_entropy = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(y, y_))
     tstep = tf.train.GradientDescentOptimizer(0.5).minimize(cross_entropy)
 
-
     ###############TRAINING_DATA########################
     # initializing session and variables
     session = tf.InteractiveSession()
